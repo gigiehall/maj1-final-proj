@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use the full height of the viewport */
+  margin: 0; /* Remove default margin */
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #d2d2d2;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: "Epilogue";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5em;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border: 2px solid #000; /* Add a 1px border with a black color */
+}
+
+.axis-x text {
+  font-family: Roboto Mono;
+  font-size: 14px;
+  fill: #000;
+}
+
+.x-axis-background {
+  width: 100%;
+}
+
+/* Your existing styles */
+
+.header {
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  color: #d7d7d7;
+  font-size: 80px;
+  font-family: "Epilogue";
+  font-weight: 300;
+}
+
+.header4 {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  color: #d7d7d7;
+  font-size: 28px;
+  font-family: "Epilogue";
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.paragraph-container {
+  position: absolute;
+  top: 160px; /* Adjust the top position as needed */
+  right: 80px; /* Adjust the right position to move it to the right side */
+  display: flex;
+  flex-direction: row; /* Arrange paragraphs in a row */
+}
+
+.paragraph {
+  margin-right: 20px; /* Add margin between paragraphs */
+  color: #d7d7d7;
+  font-size: 14px;
+  font-family: "Work Sans";
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  background-color: rgba(51, 51, 51, 0); /* Adjust the alpha value as needed */
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid #aeaeae;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation li {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #aeaeae;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: regular;
+  transition: color 0.3s; /* Add a smooth color transition */
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #3780d7; /* Hover and focus color */
+}
+
+.navigation a.active {
+  color: #000; /* Active link color */
+  background-color: #c7c7c7; /* Add your desired background color */
+  padding: 13px 20px; /* Add padding to give some space around the text */
+}
